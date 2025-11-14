@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="p-4">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800 capitalize">{{ folder }}</h2>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ folder }} Page</ion-card-title>
+        <ion-card-subtitle>Accessible from side menu</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="mb-3">This is the {{ folder }} page. You can navigate between different pages using the side menu.</p>
+        <p class="text-sm text-gray-600">Notice that the bottom tabs are always visible, making navigation consistent throughout the app.</p>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+      <h3 class="text-lg font-semibold text-indigo-800 mb-2">Features</h3>
+      <ul class="list-disc pl-5 space-y-1 text-indigo-700">
+        <li>Global bottom tabs navigation</li>
+        <li>Side menu accessible from all pages</li>
+        <li>Ionic + Angular + Material + Tailwind</li>
+        <li>Responsive design</li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <ion-button expand="block" routerLink="/tabs/tab1">
+        <ion-icon slot="start" name="home"></ion-icon>
+        Go to Home
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

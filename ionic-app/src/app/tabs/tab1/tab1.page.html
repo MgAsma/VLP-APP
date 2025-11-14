@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="p-4">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">Welcome to Tab 1</h2>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Ionic + Angular + Material + Tailwind</ion-card-title>
+        <ion-card-subtitle>All working together!</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="mb-3">This app demonstrates the integration of:</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Ionic Framework (Stable Version)</li>
+          <li>Angular</li>
+          <li>Angular Material</li>
+          <li>Tailwind CSS</li>
+          <li>Side Menu Navigation</li>
+          <li>Bottom Tabs Navigation</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="mt-4 grid grid-cols-2 gap-4">
+      <ion-button expand="block" class="m-0">
+        <ion-icon slot="start" name="add-circle"></ion-icon>
+        Action 1
+      </ion-button>
+      <ion-button expand="block" color="secondary" class="m-0">
+        <ion-icon slot="start" name="settings"></ion-icon>
+        Action 2
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
